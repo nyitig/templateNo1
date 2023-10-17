@@ -1,0 +1,114 @@
+/* header style */
+#header {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  padding: 1rem 0;
+}
+#header.scrolled {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(40, 38, 35, 0.9);
+}
+
+#headerDiv {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+#headerH2 {
+  color: #fefffd;
+}
+#headerH2.scrolled {
+  color: var(--colorHeaderAndPoint);
+}
+#menuSvgDivCont {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+}
+#navSect {
+  display: none;
+  position: fixed;
+  z-index: -999;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+#navSect.active {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+#navSect.active.show {
+  opacity: 1;
+  background-color: white;
+}
+#navUl {
+  display: flex;
+  flex-direction: column;
+}
+#navUl li a {
+  display: block;
+  width: 100%;
+}
+
+/* scroll up section styles */
+#scrollUp.hide {
+  display: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+#scrollUp {
+  display: block;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  opacity: 1;
+}
+#scrollUpCont{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, #fbff22, #fefffd); 
+  border-radius: 50%;
+}
+#scrollUpImg {
+ rotate: -90deg;
+ filter: invert(44%) sepia(100%) saturate(626%) hue-rotate(349deg) brightness(89%) contrast(97%);
+}
+
+/* main */
+#main {
+  display: block;
+  position: absolute;
+}
+
+/* Sections styles */
+
+.sectionNav {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: 100dvh;
+  padding-top: 7rem;
+  border-bottom: 3px solid black;
+  background-color: rgb(38, 105, 194);
+}
